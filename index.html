@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webs</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #172033;
+        background: #f4f7fb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(100%, 760px);
+        padding: clamp(32px, 7vw, 72px);
+        border: 1px solid #d9e2ef;
+        border-radius: 24px;
+        background: #ffffff;
+        box-shadow: 0 24px 70px rgba(34, 58, 92, 0.12);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #176b55;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        letter-spacing: -0.06em;
+        line-height: 0.95;
+      }
+
+      p {
+        max-width: 540px;
+        margin: 24px 0 0;
+        color: #526079;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        line-height: 1.7;
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 32px;
+        color: #24324a;
+        font-size: 0.95rem;
+        font-weight: 650;
+      }
+
+      .status::before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #18845f;
+        content: "";
+        box-shadow: 0 0 0 5px #dff3eb;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Alloy development environment</p>
+      <h1>Webs is up and running.</h1>
+      <p>This repository now has a reproducible Docker-based workspace, ready for the next idea to take shape.</p>
+      <div class="status">Frontend available on port 3000</div>
+    </main>
+  </body>
+</html>
